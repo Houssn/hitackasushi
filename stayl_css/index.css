@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.imagediscription1{
+    width: 500px;
+}
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.list {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+.contact {
+
+    background-size: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: bisque;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+#btn-submit {
+    margin-right: 288px;
+}
+
+textarea {
+    width: 350px;
+}
+
+#imgiscription1 {
+    font-size: 25px;
+}
+
+#paragraph_imgiscription1 {
+    font-size: 20px;
+}
+
+.toute_discription .discription {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 100px;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.contener {
+    background: rgb(242, 230, 172);
+    border-radius: 5%;
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+#con1 {
+    padding-top: 100px;
+    text-align: center;
+    background-size: 100%;
+
+}
+
+#le_nom_de_menu {
+    margin: 0;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.les-salad {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.les-plats {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.les-obento {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#cart-d-achat {
+    right: 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    background-color: red;
+    position: fixed;
+    top: 99px;
+    height: 71px;
+}
+
+.totale-desprix {
+    right: 0;
+    width: 50%;
+    bottom: 0;
+    justify-content: space-between;
+    text-align: center;
+    background-color: red;
+    position: fixed;
+
+}
+
+.ajouter-produit {
+    right: 0;
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    background-color: red;
+    position: fixed;
+    top: 170px;
+
+}
+
+@media all and (max-width: 914px) {
+    .les-salad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .les-plats {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .les-obento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #le_nom_de_menu {
+        margin: 0;
+        text-align: center;
+        padding-top: 150px;
+        align-items: center;
+    }
+
+    .toute_discription .discription {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .chefs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 253px;
+    }
+
+}
+
+.ourstory {
+    margin-top: 76px;
+    text-align: center;
+    background-image: url(/imgs/Story-July-21-16-1920x1080.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    height: 296px;
+    color: white;
+    align-items: center;
+    
+}
+
+.les-plats-toute {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#img-chef {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.chefs {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 6rem 2rem;
+    margin-top: 20px;
+}
+.cart {
+    display: none;
+}
+
+.cart.active {
+    display: block;
+}
+
+
+/* ___________________page cart products_______________________________ */
+
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+   
+    bottom: 738px;
+    background-color: white;
+
+}
+.products-container .icon {
+font-size: 15px;
+width: 20px;
+color: blue;
+margin-left: 10px;
+margin-right: 10px;
+cursor: pointer;
+
+}
+
+.product-header{
+    width: 100%;
+   max-width: 650px;
+   display: flex;
+   justify-content: flex-start;
+   border-bottom: 4px solid lightgray;
+   margin: 0 auto;
+   
+}
+
+.product-titel{
+    width: 45%;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+   align-items: center;
+}
+.quantite{
+    width: 30%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+
+}
+#cartachat{
+    display: flex;
+    align-items: center;
+}
+.basketTotalTitle{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.products-container.active{
+    display: none;
+}

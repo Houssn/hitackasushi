@@ -1,0 +1,24 @@
+.footer{
+    margin: 0;
+    text-align: center;
+    padding: 4vh 0px;
+    display: grid;
+    gap :20px;
+    text-align: center;
+    background: #00000031;
+    font-size: 0.2 rem ;
+    margin-top: 30px;
+
+}
+
+.footer p{
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+.footer-logos img{
+    width: 30px !important;
+}
+#imgiscription1{
+    border-radius: 25px;
+}
