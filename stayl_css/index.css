@@ -12,7 +12,7 @@
 }
 body {
     margin: 0;
-    background-color: black;
+    background: linear-gradient(110deg, #3bfd4b 60%, #ffa600 60%);
 }
 
 .list {
@@ -29,12 +29,12 @@ li {
     background-size: auto;
     padding: 20px;
     text-align: center;
-    background-color: bisque;
+    background-color: #eff2f7;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-sizing: border-box;
     width: 50%;
     margin: auto;
-    border-radius: 25px;
+   
 }
 
 #btn-submit {
@@ -43,6 +43,7 @@ li {
 
 textarea {
     width: 350px;
+    resize: none;
 }
 
 #imgiscription1 {
@@ -192,20 +193,13 @@ textarea {
     textarea {
         width: 253px;
     }
+    .span1{
+        display: flex;
+    }
 
 }
 
-.ourstory {
-    margin-top: 76px;
-    text-align: center;
-    background-image: url(/imgs/Story-July-21-16-1920x1080.jpg);
-    background-size: cover;
-    box-sizing: border-box;
-    height: 296px;
-    color: white;
-    align-items: center;
-    
-}
+
 
 .les-plats-toute {
     display: flex;
@@ -266,7 +260,7 @@ cursor: pointer;
    max-width: 650px;
    display: flex;
    justify-content: flex-start;
-   border-bottom: 4px solid lightgray;
+
    margin: 0 auto;
    
 }
@@ -282,13 +276,13 @@ cursor: pointer;
 }
 .quantite{
     width: 30%;
-    border-bottom: 4px solid lightgray;
+   
     display: flex;
     align-items: center;
 }
 .total{
     width: 10%;
-    border-bottom: 4px solid lightgray;
+    
     display: flex;
     align-items: center;
 }
@@ -298,7 +292,7 @@ cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
+    padding: 25px 0;
     border-bottom: 1px solid lightgray;
 
 }
@@ -316,3 +310,21 @@ cursor: pointer;
 .products-container.active{
     display: none;
 }
+.span1 {
+    background-color: white;
+    color: green;
+    border-radius: 25px;
+}
+.span1 a{
+    color: green;
+}
+.cofermie{
+position: relative;
+align-items: center;
+left: 525px;
+border-radius: 25px;
+background-color: #3bfd4b;
+border: none;
+}
+
+/* -----------------------------------about------------------------------- */

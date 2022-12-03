@@ -1,22 +1,56 @@
-let toggl = document.getElementById("shop");
-let mydiv1 = document.getElementById("navbar");
+ function displaycart() {
+  let cartconst = localStorage.getItem("totalcost");
+   let cartItems = localStorage.getItem("productsIncart");
+   cartItems =JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+   if(cartItems && productContainer) {
+      productContainer.innerHTML = '';
+      Object.values(cartItems).map(item => {
+        productContainer.innerHTML += `
+        <div id="cartachat">
+        <div class="product">
+ 
+        <img src="./imgs/plats.jpg" width="25px">
+         <span>${item.name}</span>
+        </div>
+        <div class="price">${item.prix} </div>
+        <div class="quantite">
+        
+      <span>${item.num}</span>
+ 
+        </div>
+       
+        <div class="total">
+            ${item.num * item.prix}
+        </div> 
+        </div>
+        `
+      })
 
-toggl.addEventListener("click" ,function () {
-    document.querySelector(".products-container").classList.toggle("active");
-})
+      productContainer.innerHTML +=`
+      <div class="basketTotalTitle">
+      <h4 class="basketTotalTitele">
+      total :
+      </h4>
+      <h4 class="basketTotal">
+      $${cartconst}
+      </h4>
+      </div>
+      `
 
-
-
-
-
-let confermie = document.querySelector(".cofermie");
-
-confermie.addEventListener("click", ()=>{
+   }
+ }
+function confermie(){
   console.log("hi");
   localStorage.clear();
-  alert("merci sur commend");
+  confirm("merci sur commend");
+
+  
+}
+function submet(){
+  alert("thanks for our message");
   location.reload();
-})
+}
 let add = document.querySelectorAll(".btn1");
 
 
@@ -73,6 +107,7 @@ for (let i = 0; i < add.length; i++) {
     cartNumbrs(products[i]);
     totalcost(products[i]);
     location.reload();
+    
   });
 }
 function onloadecart() {
@@ -131,62 +166,9 @@ function setItems (product){
   }
    
  }
- function displaycart() {
-  let cartconst = localStorage.getItem("totalcost");
-   let cartItems = localStorage.getItem("productsIncart");
-   cartItems =JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products");
-   if(cartItems && productContainer) {
-       
-      productContainer.innerHTML = '';
-      Object.values(cartItems).map(item => {
-        productContainer.innerHTML += `
-        <div id="cartachat">
-        <div class="product">
-        <svg class="icon" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M18 6 6 18"></path>
-  <path d="m6 6 12 12"></path>
-</svg>  
-        <img src="./imgs/plats.jpg" width="25px">
-         <span>${item.name}</span>
-        </div>
-        <div class="price">${item.prix} </div>
-        <div class="quantite">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
-        <path d="M12 8v8"></path>
-        <path d="M8 12h8"></path>
-      </svg>
-      <span>${item.num}</span>
-      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
-  <path d="M8 12h8"></path>
-</svg>
-        </div>
-       
-        <div class="total">
-            ${item.num * item.prix}
-        </div> 
-        </div>
-        `
-      })
 
-      productContainer.innerHTML +=`
-      <div class="basketTotalTitle">
-      <h4 class="basketTotalTitele">
-      total :
-      </h4>
-      <h4 class="basketTotal">
-      $${cartconst}
-      </h4>
-      </div>
-      `
-
-   }
- }
 
 
 
 onloadecart();
-
 displaycart();
