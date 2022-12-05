@@ -44,7 +44,7 @@ function confermie(){
   console.log("hi");
   localStorage.clear();
   confirm("merci sur commend");
-
+  location.reload();
   
 }
 function submet(){
