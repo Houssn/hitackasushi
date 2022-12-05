@@ -12,7 +12,7 @@
 }
 body {
     margin: 0;
-    background: linear-gradient(110deg, #3bfd4b 60%, #ffa600 60%);
+    background: linear-gradient(110deg, #ffa600  60%, #3bfd4b 60%);
 }
 
 .list {
