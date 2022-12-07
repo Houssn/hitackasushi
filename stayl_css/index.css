@@ -12,7 +12,7 @@
 }
 body {
     margin: 0;
-    background: linear-gradient(110deg, #ffa600  60%, #3bfd4b 60%);
+    background: linear-gradient(110deg, #ffa600  60%,#3bfd4b 60%);
 }
 
 .list {
@@ -151,7 +151,7 @@ textarea {
     top: 170px;
 
 }
-.chefs {
+/* .chefs {
     text-align: center;
     align-items: center;
     display: grid;
@@ -159,7 +159,7 @@ textarea {
     grid-template-rows: auto auto;
     padding: 6rem 2rem;
     margin-top: 20px;
-}
+} */
 .sushi{
     align-items: center;
     margin-top: 200px;
@@ -176,64 +176,7 @@ textarea {
     display: none;
 }
 
-@media all and (max-width: 700px) {
-    .chefs{
-        display: none;
-        display: flex;
-        flex-direction: column;
-    }
-    .les-salad {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .les-plats {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .les-obento {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #le_nom_de_menu {
-        margin: 0;
-        text-align: center;
-        padding-top: 150px;
-        align-items: center;
-    }
-
-    .toute_discription .discription {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .chefs {
-        display: flex;
-        flex-direction: column;
-    }
-
-    textarea {
-        width: 253px;
-    }
-    .span1{
-        display: flex;
-    }
-    .sushi{
-      display: flex;
-      flex-direction: column;
-    }
-    #sushi{
-        width: 300px;  
-    }
-    
-}
 .les-plats-toute {
     display: flex;
     flex-direction: column;
@@ -247,8 +190,10 @@ textarea {
     height: 200px;
     margin-top: 20px;
 }
-
-.chefs {
+.chefs{
+    text-align: center;
+}
+/* .chefs {
     text-align: center;
     align-items: center;
     display: grid;
@@ -256,6 +201,16 @@ textarea {
     grid-template-rows: auto auto;
     padding: 6rem 2rem;
     margin-top: 20px;
+} */
+.mon-chef{
+    padding: 0 2rem;
+}
+.article{
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 .sushi{
     align-items: center;
@@ -367,10 +322,86 @@ cursor: pointer;
 .cofermie{
 position: relative;
 align-items: center;
-left: 525px;
+justify-content: space-between;
+left: 68%;
 border-radius: 25px;
 background-color: #3bfd4b;
 border: none;
+}
+
+@media all and (max-width: 914px) {
+    /* .chefs{
+        display: none;
+        display: flex;
+        flex-direction: column;
+    } */
+    .les-salad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .les-plats {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .les-obento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #le_nom_de_menu {
+        margin: 0;
+        text-align: center;
+        padding-top: 150px;
+        align-items: center;
+    }
+
+    .toute_discription .discription {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .chefs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 253px;
+    }
+    .span1{
+        display: flex;
+    }
+    .sushi{
+      display: flex;
+      flex-direction: column;
+    }
+    #sushi{
+        width: 300px;  
+    }
+    #img-chef {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .chefs{
+        text-align: center;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
 }
 
 /* -----------------------------------about------------------------------- */

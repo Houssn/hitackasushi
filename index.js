@@ -7,10 +7,15 @@ document.getElementById("selector").addEventListener("change",() => {
         if(element.innerHTML==text)
         {
             element.parentElement.style.display="inline";
+            
         }
-        else
+     else 
         {
             element.parentElement.style.display="none";  
+           
         }
+   
+
+   
     });
 })

@@ -1,56 +1,7 @@
- function displaycart() {
-  let cartconst = localStorage.getItem("totalcost");
-   let cartItems = localStorage.getItem("productsIncart");
-   cartItems =JSON.parse(cartItems);
-    let productContainer = document.querySelector(".products");
-   if(cartItems && productContainer) {
-      productContainer.innerHTML = '';
-      Object.values(cartItems).map(item => {
-        productContainer.innerHTML += `
-        <div id="cartachat">
-        <div class="product">
- 
-        <img src="./imgs/plats.jpg" width="25px">
-         <span>${item.name}</span>
-        </div>
-        <div class="price">${item.prix} </div>
-        <div class="quantite">
-        
-      <span>${item.num}</span>
- 
-        </div>
-       
-        <div class="total">
-            ${item.num * item.prix}
-        </div> 
-        </div>
-        `
-      })
-
-      productContainer.innerHTML +=`
-      <div class="basketTotalTitle">
-      <h4 class="basketTotalTitele">
-      total :
-      </h4>
-      <h4 class="basketTotal">
-      $${cartconst}
-      </h4>
-      </div>
-      `
-
-   }
- }
-function confermie(){
-  console.log("hi");
-  localStorage.clear();
-  confirm("merci sur commend");
-  location.reload();
-  
+function reload(){
+  location.reload;
 }
-function submet(){
-  alert("thanks for our message");
-  location.reload();
-}
+
 let add = document.querySelectorAll(".btn1");
 
 
@@ -167,7 +118,58 @@ function setItems (product){
    
  }
 
+ function displaycart() {
+  let cartconst = localStorage.getItem("totalcost");
+   let cartItems = localStorage.getItem("productsIncart");
+   cartItems =JSON.parse(cartItems);
+    let productContainer = document.querySelector(".products");
+   if(cartItems && productContainer) {
+      productContainer.innerHTML = '';
+      Object.values(cartItems).map(item => {
+        productContainer.innerHTML += `
+        <div id="cartachat">
+        <div class="product">
+ 
+        <img src="./imgs/plats.jpg" width="25px">
+         <span>${item.name}</span>
+        </div>
+        <div class="price">${item.prix} </div>
+        <div class="quantite">
+        
+      <span>${item.num}</span>
+        </div>
 
+        <div class="total">
+            ${item.num * item.prix}
+        </div> 
+        </div>
+        `
+      })
+
+      productContainer.innerHTML +=`
+      <div class="basketTotalTitle">
+      <h4 class="basketTotalTitele">
+      total :
+      </h4>
+      <h4 class="basketTotal">
+      $${cartconst}
+      </h4>
+      </div>
+      `
+
+   }
+ }
+function confermie(){
+  console.log("hi");
+  localStorage.clear();
+  alert("merci sur commend");
+  location.reload();
+  
+}
+function submet(){
+  alert("thanks for our message");
+  location.reload();
+}
 
 
 onloadecart();
