@@ -7,7 +7,7 @@ let add = document.querySelectorAll(".btn1");
 
 let products = [
   {
-    name: "naruto",
+    name: "salad1",
     prix: 150.00,
     num: 0,
   },
