@@ -1,14 +1,14 @@
-function reload(){
-  location.reload;
-}
+// function reload(){
+//   location.reload;
+// }
 
 let add = document.querySelectorAll(".btn1");
 
 
 let products = [
   {
-    name: "salad1",
-    prix: 100.00,
+    name: "naruto",
+    prix: 150.00,
     num: 0,
   },
   {
